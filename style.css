@@ -261,7 +261,19 @@ body{
   }
 }
 /*Products*/
+.product-header{
+  max-width: 600px;
+  margin: 32px 0 24px;
+}
+.page-title {
+  font-size: 36px;
+  line-height: 1.2;
+}
 
+.page-subtitle {
+  font-size: 16px;
+  color: #666;
+}
 .products{
   width: 100%;
   background: #ffffff;
