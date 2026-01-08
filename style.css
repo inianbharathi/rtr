@@ -688,19 +688,11 @@ body{
   line-height: 1.5;
 
 }
-.products-card button{
-  margin-top: auto;
-  background: #000;
-  color: #fff;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 8px;
-  font-size: 14px;
-  cursor: pointer;
-}
+
 .products-card button:hover {
   opacity: 0.9;
 }
+
 @media (max-width: 1024px){
   .products-grid{
     grid-template-columns: repeat(3,1fr);
@@ -816,3 +808,159 @@ body{
   }
 }
 
+/* =====================
+   CONTACT PAGE
+===================== */
+.contact-content {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+}
+/* Left */
+.contact-form {
+  flex: 1;
+}
+
+/* Right */
+.contact-info {
+  margin-top: 56px;
+  width: 280px;
+}
+.contact-info h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.contact-info p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+/* Mobile */
+@media (max-width: 769px) {
+  .contact-content {
+    flex-direction: column;
+  }
+
+  .contact-info {
+    width: 100%;
+    padding-left: 32px;
+    border-left: 1px solid #eee;
+  }
+  .contact {
+    padding: 48px 0;
+  }
+
+  .contact-header h1 {
+    font-size: 28px;
+  }
+
+  .contact-header p {
+    font-size: 14px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 16px; /* prevents iOS zoom */
+  }
+
+  .contact-info {
+    margin-top: 40px;
+    padding-left: 0;
+    border-left: none;
+  }
+
+  .contact-form button {
+    width: 100%;
+  }
+}
+.contact {
+  padding: 35px 0;
+}
+
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.contact-header {
+  margin-bottom: 32px;
+}
+
+.contact-header h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.contact-header p {
+  color: #666;
+}
+
+/* Form */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-group label {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.contact-form button {
+  margin-top: 8px;
+  align-self: stretch;
+  text-align: center;
+}
+.btn {
+  display: inline-block;        /* THIS IS THE KEY */
+  padding: 10px 16px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;        /* remove underline */
+  cursor: pointer;
+  text-align: center;
+}
+
+/* kill anchor states explicitly */
+.btn:link,
+.btn:visited,
+.btn:hover,
+.btn:active {
+  color: #fff;
+  text-decoration: none;
+}
