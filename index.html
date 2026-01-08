@@ -11,7 +11,7 @@
   
 </head>
 <body>
-    <header class="header">
+    <!-- <header class="header">
     <div class="header-inner">
         <div class="logo"><a href="index.html">cyber</a></div>
     <button class="menu-toggle">☰</button> 
@@ -24,7 +24,8 @@
         </nav>
     </div>
     
-    </header>
+    </header> -->
+<div id="header"></div>
 <section class="hero">
     <div class="hero-inner">
         <div class="hero-text">
@@ -98,7 +99,7 @@
                     <label>Networking</label></div>
                 <div class="categories-card">
                 <div class="categories-icon">
-                    <img src="/images/icons/supercomputer.png" alt="supercomputer">
+                    <img src="./images/icons/supercomputer.png" alt="supercomputer">
                 </div>
                     <label>Super Computer</label></div>
                 <div class="categories-card">  
@@ -177,7 +178,7 @@
     </div>
  </section>
 
-<section class="footer">
+<!-- <section class="footer">
     <div class="footer-inner">
     <div class="brand">
     <h3>cyber</h3>    
@@ -217,6 +218,16 @@
 </div>
 </div>
 
-</section>
+</section> -->
+<div id="footer"></div>
+<script>
+  fetch("partials/header.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("header").innerHTML = data);
+
+  fetch("partials/footer.html")
+    .then(res => res.text())
+    .then(data => document.getElementById("footer").innerHTML = data);
+</script>
 </body>
 </html>
