@@ -1,3 +1,10 @@
+#header, #footer {
+  display: block !important;
+  min-height: 80px;
+  background: red !important;
+  color: white;
+  font-size: 20px;
+}
 *,
 *::before,
 *::after {
