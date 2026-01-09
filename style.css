@@ -1,7 +1,4 @@
-#header {
-  min-height: 80px;
-  background: lime;
-}
+
 
 /* Ensure injected header/footer are visible */
 #header header,
@@ -28,7 +25,6 @@ body{
   background-color:white;
   border-bottom: 1px solid #eee;
 }
-
 .header-inner {
   max-width:1200px;
   margin:0 auto;
@@ -977,3 +973,17 @@ body{
   color: #fff;
   text-decoration: none;
 }
+/* ===== Shared header/footer wrapper fix ===== */
+#header {
+  width: 100%;
+  position: relative;
+  background-color: white;
+  border-bottom: 1px solid #eee;
+}
+
+#footer {
+  width: 100%;
+  position: relative;
+}
+/* ========================================== */
+
