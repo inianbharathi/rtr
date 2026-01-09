@@ -1,9 +1,10 @@
-#header, #footer {
-  display: block !important;
-  min-height: 80px;
-  background: red !important;
-  color: white;
-  font-size: 20px;
+/* Ensure injected header/footer are visible */
+#header header,
+#footer footer {
+  display: block;
+  position: relative;
+  height: auto;
+  overflow: visible;
 }
 *,
 *::before,
