@@ -1,0 +1,16 @@
+.product-details{
+    max-width: 1024px;;
+}
+
+/* Product Details main grid */
+.details-inner{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.product-image img{
+    width:100%;
+    height:auto;
+    border-radius:8px;
+}
+.product-info
