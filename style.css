@@ -23,8 +23,8 @@ body {
   width: 100%;
   background-color: white;
   border-bottom: 1px solid #eee;
-  position:relative;
-  
+  position: relative;
+
 }
 
 .header-inner {
@@ -695,6 +695,7 @@ body {
 }
 
 /* Products Section */
+
 .products-tabs {
   display: flex;
   gap: 15px;
@@ -750,6 +751,7 @@ body {
   margin-bottom: 32px;
 }
 
+
 .products-card {
   display: flex;
   flex-direction: column;
@@ -760,9 +762,16 @@ body {
 }
 
 .products-card img {
+  display: block;
   max-width: 140px;
   flex-shrink: 0;
-  align-self: center;
+  margin: 0 auto;
+}
+
+.products-card-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
 
 .products-title {
