@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="./products-detail.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo"><a href="index.html">cyber</a></div>
+            <button class="menu-toggle">☰</button>
+
+            <nav class="nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="products.html">Products</a>
+                <a href="#">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
+    </header>
+    <section class="product-details">
+        <div class="details-inner">
+            <div class="product-image">
+                <img src="./images/Image Resize 3.jpg" alt="NVIDIA RTX PRO 6000 GPU" />
+            </div>
+            <div class="product-info">
+                <h1 class="product-name">NVIDIA RTX PRO 6000</h1>
+                <p class="product-subtitle">Blackwell Workstation Edition</p>
+                <p class="product-price">$39,900</p>
+                <div class="product-meta">
+                    <!-- Meta rows-->
+                    <span class="meta-qty">Available Quantity: >50</span>
+                    <span class="meta-sku">SKU: 260756</span>
+                </div>
+                <!-- Edition Selection: -->
+                <div class="edition-selector">
+                    <button class="edition-btn is-disabled" disabled>
+                        Server Edition
+                    </button>
+                    <button class="edition-btn is-active">
+                        Workstation Edition
+                    </button>
+                </div>
+                <div class="kpi-section">
+                    <div class="kpi-box">
+                        <img src="./images/icons/memory.png" alt="" class="kpi-icon">
+                        <div class="kpi-text">
+                            <span class="kpi-label">Memory Bandwidth</span>
+                            <span class="kpi-value">1.8 TB/s</span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-box">
+                        <img src="./images/icons/tensor.png" alt="" class="kpi-icon">
+                        <div class="kpi-text">
+                            <span class="kpi-label">Tensor Cores</span>
+                            <span class="kpi-value">5th Generation</span>
+                        </div>
+                    </div>
+
+                    <div class="kpi-box">
+                        <img src="./images/icons/ray.png" alt="" class="kpi-icon">
+                        <div class="kpi-text">
+                            <span class="kpi-label">Ray Tracing Cores</span>
+                            <span class="kpi-value">4th Generation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="product-description">
+                    High-performance Blackwell workstation GPU for AI, ray tracing, and pro workflows,
+                    featuring up to 4000 TOPS, 5th Gen Tensor Cores, 4th Gen RT Cores, PCIe Gen 5, MIG,
+                    and DP 2.1b. <a href="#product-details" class="read-more">
+                        Read full specifications…
+                    </a>
+                </p>
+                <div class="button-container">
+                    <a href="contact.html" class="cta-button">
+                        Enquire to Buy
+                    </a>
+                </div>
+                <!-- Delivery & Pickup Info -->
+                <div class="pickup-info">
+                    <div class="info-chip">
+                        <img src="./images/icons/delivery.png" alt="Delivery icon">
+                        <div class="info-text">
+                            <span class="info-label">Delivery</span>
+                            <span class="info-value">1–2 Days</span>
+                        </div>
+                    </div>
+
+                    <div class="info-chip">
+                        <img src="./images/icons/store.png" alt="Pickup icon">
+                        <div class="info-text">
+                            <span class="info-label">Exworks Pickup</span>
+                            <span class="info-value">Today</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Products Details Section -->
+    <section class="product-details-section" id="product-details">
+        <div class="product-details-inner">
+
+            <h2 class="section-title">Details</h2>
+            <p class="section-description">High-performance workstation GPU based on the Blackwell architecture,
+                purpose-built for advanced AI, ray tracing, and demanding professional workflows. It delivers up to 4000
+                TOPS of AI performance and features 5th Gen Tensor Cores with FP4 precision and DLSS 4 support, along
+                with 4th Gen Ray Tracing Cores for realistic visuals. Additional capabilities include PCIe Gen 5
+                connectivity, MIG (Multi-Instance GPU) for workload partitioning, and four DisplayPort 2.1b connectors.
+                Optimized for generative AI, complex 3D design, visualization, and large-scale simulation tasks.</p>
+
+            <div class="spec-section">
+                <h3 class="spec-title">Memory Size</h3>
+
+                <div class="spec-row">
+                    <span class="spec-label">GPU</span>
+                    <span class="spec-value">96GB GDDR7 (1.8 TB/s bandwidth)</span>
+                </div>
+            </div>
+            <div class="inventory-section">
+                <div class="inventory-header">
+                    <span class="avaialbe-stock-title">Other Products In Stock</span>
+                    <span class="avaialbe-stock-quant">Quantity</span>
+                </div>
+
+                <div class="inventory-row">
+                    <span class="inventory-product">NVIDIA RTX PRO 6000 Blackwell Server Edition</span>
+                    <span class="inventory-qty">&gt;100</span>
+                </div>
+                <div class="inventory-row">
+                    <span class="inventory-product">The NVIDIA H200 Tensor Core GPU (NVL Variant) resolution</span>
+                    <span class="inventory-qty">&gt;50</span>
+                </div>
+                <div class="inventory-row">
+                    <span class="inventory-product">NVIDIA RTX 6000 Ada Generation</span>
+                    <span class="inventory-qty">&gt;35</span>
+                </div>
+                <div class="inventory-row">
+                    <span class="inventory-product">NVIDIA L40S GPU</span>
+                    <span class="inventory-qty">&gt;20</span>
+                </div>
+                <div class="inventory-row">
+                    <span class="inventory-product">NVIDIA DGX Spark</span>
+                    <span class="inventory-qty">&gt;45</span>
+                </div>
+                <div class="inventory-row">
+                    <span class="inventory-product">NVIDIA DGX Station</span>
+                    <span class="inventory-qty">&gt;50</span>
+                </div>
+                <div class="secondary-cta-wrap">
+                    <a href="contact.html" class="secondary-cta">Enquire to Buy</a>
+                </div>
+            </div>
+    </section>
+    </section>
+    <!-- Similar Products Section -->
+    <section class="sp-section" aria-labelledby="sp-title">
+        <div class="sp-inner">
+
+            <header class="sp-header">
+                <h2 id="sp-title" class="sp-section-title">Similar Products</h2>
+            </header>
+
+            <div class="sp-grid">
+
+                <article class="sp-card">
+                    <a href="product-rtx-pro-6000-server.html" class="sp-card-link">
+                        <div class="sp-image">
+                            <img src="./images/Image Resize 2.jpg"
+                                alt="NVIDIA RTX PRO 6000 Blackwell Server Edition GPU">
+                        </div>
+
+                        <h3 class="sp-title">NVIDIA RTX PRO 6000 Blackwell Server Edition</h3>
+                        <p class="sp-price">$11,989</p>
+                    </a>
+                    <a href="contact.html" class="sp-btn">Enquire</a>
+                </article>
+                <article class="sp-card">
+                    <a href="product-rtx-pro-6000-server.html" class="sp-card-link">
+                        <div class="sp-image">
+                            <img src="./images/Image Resize 7.jpg"
+                                alt="NVIDIA RTX PRO 6000 Blackwell Server Edition GPU">
+                        </div>
+
+                        <h3 class="sp-title">NVIDIA DGX Station</h3>
+                        <p class="sp-price">$99,000</p>
+
+                    </a>
+                    <a href="contact.html" class="sp-btn">Enquire</a>
+                </article>
+
+                <article class="sp-card">
+                    <a href="product-rtx-pro-6000-server.html" class="sp-card-link">
+                        <div class="sp-image">
+                            <img src="./images/Image Resize 6.jpg"
+                                alt="NVIDIA RTX PRO 6000 Blackwell Server Edition GPU">
+                        </div>
+
+                        <h3 class="sp-title">NVIDIA DGX Spark</h3>
+                        <p class="sp-price">$34,000</p>
+                    </a>
+                    <a href="contact.html" class="sp-btn">Enquire</a>
+                </article>
+
+                <article class="sp-card">
+                    <a href="product-rtx-pro-6000-server.html" class="sp-card-link">
+                        <div class="sp-image">
+                            <img src="./images/Image Resize 4.jpg"
+                                alt="NVIDIA RTX PRO 6000 Blackwell Server Edition GPU">
+                        </div>
+
+                        <h3 class="sp-title">NVIDIA RTX 6000 Ada Generation</h3>
+                        <p class="sp-price">$6,799</p>
+                    </a>
+                    <a href="contact.html" class="sp-btn">Enquire</a>
+                </article>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <div class="footer-inner">
+            <div class="brand">
+                <h3>cyber</h3>
+                <p>
+                    We supply enterprise-grade GPU and AI hardware, including NVIDIA accelerators
+                    for data centers, AI workloads, and high-performance computing.
+                </p>
+            </div>
+            <div class="services">
+                <h4>Services</h4>
+                <ul>
+                    <li>AI & GPU Hardware Supply</li>
+                    <li>Enterprise & Data Center GPUs</li>
+                    <li>AI Training & Inference Systems</li>
+                    <li>Custom GPU Server Configurations</li>
+                    <li>Bulk & Contract Procurement</li>
+                    <li>Hardware Consultation</li>
+                </ul>
+            </div>
+            <div class="assistance">
+                <h4>Assistance to the buyer</h4>
+                <ul>
+                    <li>Request a Quote</li>
+                    <li>Order Tracking</li>
+                    <li>Delivery & Logistics</li>
+                    <li>Warranty & RMA Support</li>
+                    <li>Technical Specifications</li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+            <div class="social">
+                <img src="./images/icons/facebbok.png" alt="meta">
+                <img src="./images/icons/linkedin.png" alt="linkedin">
+                <img src="./images/icons/insta.png" alt="Instagram">
+                <img src="./images/icons/twitter.png" alt="twitter">
+
+            </div>
+        </div>
+
+</body>
+
+</html>
