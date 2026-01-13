@@ -7,6 +7,7 @@
     <title>Product Details</title>
     <link rel="stylesheet" href="./products-detail.css">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="menu.css">
 </head>
 
 <body>
@@ -270,7 +271,14 @@
 
             </div>
         </div>
+        <script>
+            const toggle = document.querySelector(".menu-toggle");
+            const nav = document.querySelector(".nav");
 
+            toggle.addEventListener("click", () => {
+                nav.classList.toggle("show");
+            });
+        </script>
 </body>
 
 </html>

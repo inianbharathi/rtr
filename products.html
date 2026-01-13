@@ -1,124 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GPU Site</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  
+
 </head>
+
 <body>
     <header class="header">
-    <div class="header-inner">
-        <div class="logo"><a href="index.html">cyber</a></div>
-    <button class="menu-toggle">☰</button> 
+        <div class="header-inner">
+            <div class="logo"><a href="index.html">cyber</a></div>
+            <button class="menu-toggle">☰</button>
 
-    <nav class="nav">        
-        <a href="index.html"class="active">Home</a>
-        <a href="products.html">Products</a>
-        <a href="#">Pricing</a>
-        <a href="contact.html">Contact</a>
-        </nav>
-    </div>
-    
+            <nav class="nav">
+                <a href="index.html" >Home</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="#">Pricing</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+
     </header>
 
-<!-- Products section -->
+    <!-- Products section -->
 
- <section class="products">
-    <div class="prods-inner">
-        <div class="product-header">
-        <h1 class="page-title">Products</h1>
-        <p class="page-subtitle">Explore our available hardware inventory</p>
+    <section class="products">
+        <div class="prods-inner">
+            <div class="product-header">
+                <h1 class="page-title">Products</h1>
+                <p class="page-subtitle">Explore our available hardware inventory</p>
+            </div>
+            <div class="products-tabs">
+                <button class="tab active">New Arrival</button>
+                <button class="tab">Bestseller</button>
+                <button class="tab">Featured Products</button>
+            </div>
+            <div class="products-grid">
+                <div class="products-card">
+                    <img src="./images/Image Resize 3.jpg"
+                        alt="NVIDIA RTX PRO 6000 Blackwell Workstation Edition front view">
+                    <p class="products-title">NVIDIA RTX PRO 6000 Blackwell Workstation Edition </p>
+                    <a href="contact.html" class="btn">Enquire</a>
+                </div>
+                <div class="products-card">
+                    <img src="./images/Image Resize 2.jpg" alt="">
+                    <p class="products-title">NVIDIA RTX PRO 6000 Blackwell Server Edition</p>
+                    <a href="contact.html" class="btn">Enquire</a>
+                </div>
+                <div class="products-card">
+                    <img src="./images/Image Resize1.jpg" alt="">
+                    <p class="products-title">NVIDIA H200 Tensor Core GPU (NVL Variant)</p>
+                    <a href="contact.html" class="btn">Enquire</a>
+                </div>
+                <div class="products-card">
+                    <img src="./images/Image Resize 4.jpg" alt="">
+                    <p class="products-title">NVIDIA RTX 6000 Ada Generation </p>
+                    <a href="contact.html" class="btn">Enquire</a>
+                </div>
+                <div class="products-card">
+                    <img src="./images/Image Resize 5.jpg" alt="">
+                    <p class="products-title">NVIDIA L40S GPU</p>
+                    <a href="contact.html" class="btn">Enquire</a>
+                </div>
+                <div class="products-card">
+                    <img src="./images/Image Resize 6.jpg" alt="">
+                    <p class="products-title">NVIDIA DGX Spark</p>
+                    <a href="contact.html" class="btn">Enquire</a>
+                </div>
+                <div class="products-card">
+                    <img src="./images/Image Resize 7.jpg" alt="">
+                    <p class="products-title">NVIDIA DGX Station</p>
+                    <a href="contact.html" class="btn">Enquire</a>
+                </div>
+            </div>
         </div>
-        <div class="products-tabs">
-            <button class="tab active">New Arrival</button>
-            <button class="tab">Bestseller</button>
-            <button class="tab">Featured Products</button>
-        </div>
-        <div class="products-grid">
-            <div class="products-card">
-                <img src="./images/Image Resize 3.jpg" alt="NVIDIA RTX PRO 6000 Blackwell Workstation Edition front view">
-                <p class="products-title">NVIDIA RTX PRO 6000 Blackwell Workstation Edition </p>
-                <a href="contact.html"class="btn">Enquire</a>
+    </section>
+    <section class="footer">
+        <div class="footer-inner">
+            <div class="brand">
+                <h3>cyber</h3>
+                <p>
+                    We supply enterprise-grade GPU and AI hardware, including NVIDIA accelerators
+                    for data centers, AI workloads, and high-performance computing.
+                </p>
             </div>
-            <div class="products-card">
-                <img src="./images/Image Resize 2.jpg" alt="">
-                <p class="products-title">NVIDIA RTX PRO 6000 Blackwell Server Edition</p>
-                <a href="contact.html"class="btn">Enquire</a>
+            <div class="services">
+                <h4>Services</h4>
+                <ul>
+                    <li>AI & GPU Hardware Supply</li>
+                    <li>Enterprise & Data Center GPUs</li>
+                    <li>AI Training & Inference Systems</li>
+                    <li>Custom GPU Server Configurations</li>
+                    <li>Bulk & Contract Procurement</li>
+                    <li>Hardware Consultation</li>
+                </ul>
             </div>
-            <div class="products-card">
-                <img src="./images/Image Resize1.jpg" alt="">
-                <p class="products-title">NVIDIA H200 Tensor Core GPU (NVL Variant)</p>
-                <a href="contact.html"class="btn">Enquire</a>
+            <div class="assistance">
+                <h4>Assistance to the buyer</h4>
+                <ul>
+                    <li>Request a Quote</li>
+                    <li>Order Tracking</li>
+                    <li>Delivery & Logistics</li>
+                    <li>Warranty & RMA Support</li>
+                    <li>Technical Specifications</li>
+                    <li>Terms & Conditions</li>
+                </ul>
             </div>
-            <div class="products-card">
-                <img src="./images/Image Resize 4.jpg" alt="">
-                <p class="products-title">NVIDIA RTX 6000 Ada Generation </p>
-                <a href="contact.html"class="btn">Enquire</a>
-            </div>
-            <div class="products-card">
-                <img src="./images/Image Resize 5.jpg" alt="">
-                <p class="products-title">NVIDIA L40S GPU</p>
-                <a href="contact.html"class="btn">Enquire</a>
-            </div>
-            <div class="products-card">
-                <img src="./images/Image Resize 6.jpg" alt="">
-                <p class="products-title">NVIDIA DGX Spark</p>
-                <a href="contact.html"class="btn">Enquire</a>
-            </div>
-            <div class="products-card">
-                <img src="./images/Image Resize 7.jpg" alt="">
-                <p class="products-title">NVIDIA DGX Station</p>
-                <a href="contact.html"class="btn">Enquire</a>
-            </div>
-        </div>
-    </div>
- </section>
-<section class="footer">
-    <div class="footer-inner">
-    <div class="brand">
-    <h3>cyber</h3>    
-    <p>
-        We supply enterprise-grade GPU and AI hardware, including NVIDIA accelerators
-        for data centers, AI workloads, and high-performance computing.
-    </p>
-    </div>
-    <div class="services">
-    <h4>Services</h4>
-        <ul>
-            <li>AI & GPU Hardware Supply</li>
-            <li>Enterprise & Data Center GPUs</li>
-            <li>AI Training & Inference Systems</li>
-            <li>Custom GPU Server Configurations</li>
-            <li>Bulk & Contract Procurement</li>
-            <li>Hardware Consultation</li>
-        </ul>
-    </div>
-    <div class="assistance">
-    <h4>Assistance to the buyer</h4>
-        <ul>
-            <li>Request a Quote</li>
-            <li>Order Tracking</li>
-            <li>Delivery & Logistics</li>
-            <li>Warranty & RMA Support</li>
-            <li>Technical Specifications</li>
-            <li>Terms & Conditions</li>
-        </ul>
-    </div>
-    <div class="social">      
-    <img src="./images/icons/facebbok.png" alt="meta">
-    <img src="./images/icons/linkedin.png" alt="linkedin">
-    <img src="./images/icons/insta.png" alt="Instagram">
-    <img src="./images/icons/twitter.png" alt="twitter">
-    
-</div>
-</div>
+            <div class="social">
+                <img src="./images/icons/facebbok.png" alt="meta">
+                <img src="./images/icons/linkedin.png" alt="linkedin">
+                <img src="./images/icons/insta.png" alt="Instagram">
+                <img src="./images/icons/twitter.png" alt="twitter">
 
-</section>
+            </div>
+        </div>
 
+    </section>
+    <script>
+        const toggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".nav");
+
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("show");
+        });
+    </script>
 </body>
+
 </html>
