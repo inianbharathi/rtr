@@ -146,6 +146,7 @@ body {
     display: block;
   }
 
+
 }
 
 
@@ -825,6 +826,9 @@ body {
 .products-card button:hover {
   opacity: 0.9;
 }
+.products {
+  overflow-x: hidden;
+}
 
 @media (max-width: 1024px) {
   .products-grid {
@@ -860,12 +864,20 @@ body {
     display: flex;
   }
 
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
+   .products-grid {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 16px; /* slightly smaller for mobile */
   }
 
   .prods-inner {
     max-width: 768px;
+  }
+    .products-card {
+    padding: 16px;
+  }
+
+  .prods-inner {
+    padding: 0 12px;
   }
 
 
