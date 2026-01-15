@@ -221,7 +221,7 @@ body {
 }
 
 
-.hero-text button {
+.hero-text-button {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -232,6 +232,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.6);
   border-radius: 6px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .hero-image {
@@ -245,6 +246,7 @@ body {
   max-width: 90%;
 
 }
+
 
 @media (max-width: 768px) {
   .hero-image img {
@@ -328,14 +330,14 @@ body {
 .products-inner {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 48px;
+  gap: 40px;
 }
 
 .product-wide {
   display: flex;
   align-items: center;
   gap: 48px;
-  padding: 48px;
+  padding: 32px;
   min-width: 0;
 }
 
@@ -420,7 +422,7 @@ body {
   line-height: 1.6;
   letter-spacing: -0.01em;
   margin: 0;
-  margin-top: 30px;
+  margin-top: 12px;
 }
 
 .product-desc {
@@ -498,7 +500,7 @@ body {
 
 .right-image img {
   width: 100%;
-  max-width: 280px;
+  max-width: 252px;
   height: auto;
 }
 
@@ -537,7 +539,7 @@ body {
   padding-bottom: 30px;
 }
 
-.right-button {
+.product-cta {
   font-family: 'Inter', sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -548,9 +550,34 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.6);
   border-radius: 6px;
   cursor: pointer;
-
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 16px;
+  display: inline-flex;   /* key fix */
+  align-items: center;
+  justify-content: center;
+  width: auto;            /* prevent full width */
+  max-width: max-content; /* extra safety */
+}
+.product-desc,
+.right-desc {
+  margin-top: 8px;
+}
+.product-card.dark .product-cta {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+  background: transparent;
 }
 
+.product-card.dark .product-cta:hover {
+  border-color: #ffffff;
+}
+.product-cta:hover {
+  border-color: rgba(0, 0, 0, 0.9);
+}
+.product-card .product-cta {
+  margin-top: 14px;
+}
 @media (min-width: 1200px) {
   .products-inner {
     grid-template-columns: minmax(0, 600px) 1fr;
@@ -603,9 +630,7 @@ body {
     max-width: 100%;
   }
 
-  .right-button {
-    margin: 0 auto;
-  }
+
 
   .right-desc {
     text-align: center;
@@ -613,6 +638,12 @@ body {
 
   .right-image img {
     max-width: 260px;
+  }
+    .products {
+    padding: 0 16px;
+  }
+  .product-cta {
+    align-self: center;
   }
 }
 
@@ -633,7 +664,7 @@ body {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .right-elements {
     padding-left: 48px;
   }
