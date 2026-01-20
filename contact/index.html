@@ -6,6 +6,7 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/contact.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>    
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -20,8 +21,7 @@
 
     <nav class="nav">        
         <a href="../">Home</a>
-        <a href="../products/">Products</a>
-        <a href="../pricing/">Pricing</a>
+        <a href="../products/">Products</a>        
         <a href="../contact/" class="active">Contact</a>
         </nav>
     </div>
@@ -35,24 +35,96 @@
             </div>
              <div class="contact-content">
             <form class="contact-form">
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" placeholder="Email address" required>
-            </div>
-            <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Company (optional)">
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Tell us about your requirement" required></textarea>
-            </div>
-            <button type="submit" class="btn">Submit</button>
-        </form>
+
+<section class="contact_details">
+  <div class="form-group">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="company">Company</label>
+    <input type="text" id="company" name="company" placeholder="Company">
+  </div>
+
+  <div class="form-group">
+    <label for="email">Work Email</label>
+    <input type="email" id="email" name="email" placeholder="Email address" required>
+  </div>
+
+  <div class="form-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone"
+      placeholder="Enter your phone number (for quick follow-up)" required>
+  </div>
+</section>
+
+<section class="form-grid">
+  <!-- Model Interested In -->
+  <div class="form-group">
+    <label for="model">Model Interested In</label>
+    <select id="model" name="model" required>
+      <option value="" disabled selected>Select a model</option>
+      <option value="rtx_pro_6000_server">NVIDIA RTX PRO 6000 Blackwell – Server Edition</option>
+      <option value="rtx_pro_6000_workstation">NVIDIA RTX PRO 6000 Blackwell – Workstation Edition</option>
+      <option value="h200_nvl">NVIDIA H200 NVL</option>
+      <option value="rtx_6000_ada">NVIDIA RTX 6000 Ada Generation</option>
+      <option value="l40s_gpu">NVIDIA L40S GPU</option>
+      <option value="dgx_spark">NVIDIA DGX Spark</option>
+      <option value="dgx_station">NVIDIA DGX Station</option>
+      <option value="not_sure">Not Sure – Need Guidance</option>
+    </select>
+  </div>
+
+  <!-- Quantity Required -->
+  <div class="form-group">
+    <label for="quantity">Quantity Required</label>
+    <select id="quantity" name="quantity" required>
+      <option value="" disabled selected>Select quantity</option>
+      <option>1 – 2 Units</option>
+      <option>3 – 5 Units</option>
+      <option>6 – 10 Units</option>
+      <option>11 – 25 Units</option>
+      <option>25+ Units (Bulk Order)</option>
+    </select>
+  </div>
+
+  <!-- Purchase Timeline -->
+  <div class="form-group">
+    <label for="timeframe">How Soon Are You Looking to Buy?</label>
+    <select id="timeframe" name="timeframe" required>
+      <option value="" disabled selected>Select timeline</option>
+      <option>Immediately (Within 1 Week)</option>
+      <option>1 – 2 Weeks</option>
+      <option>1 Month</option>
+      <option>2 – 3 Months</option>
+      <option>Just Exploring / Budget Planning</option>
+    </select>
+  </div>
+
+  <!-- Delivery Preference -->
+  <div class="form-group">
+    <label for="delivery">Preferred Delivery Method</label>
+    <select id="delivery" name="delivery" required>
+      <option value="" disabled selected>Select delivery method</option>
+      <option>Ex-Works Pickup (Self Pickup)</option>
+      <option>Door Delivery (We Arrange Logistics)</option>
+    </select>
+  </div>
+</section>
+
+<section class="Additional Requirements">
+  <!-- Additional Notes -->
+  <div class="form-group">
+    <label for="message">Additional Requirements (Optional)</label>
+    <textarea id="message" name="message"
+      placeholder="Tell us about your requirement"></textarea>
+  </div>
+  </section>
+
+  <button type="submit" class="btn">Request Quote</button>
+
+</form>
               <!-- RIGHT: ADDRESS -->
       <div class="contact-info">
         <h3>Our Office</h3>
@@ -126,5 +198,23 @@
     nav.classList.toggle("show");
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const params = new URLSearchParams(window.location.search);
+    const modelParam = params.get("model");
+
+    if (modelParam) {
+      const modelSelect = document.getElementById("model");
+
+      if (modelSelect) {
+        modelSelect.value = modelParam;
+
+        // Trigger change to update styles (important)
+        modelSelect.dispatchEvent(new Event("change"));
+      }
+    }
+  });
+</script>
+
 </body>
 </html>
