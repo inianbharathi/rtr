@@ -570,5 +570,20 @@ body {
   }
 }
 
+/* Datasheet style */
 
+.datasheet-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a73e8;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+.datasheet-link:hover {
+  text-decoration: underline;
+}
 
