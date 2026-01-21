@@ -587,3 +587,7 @@ body {
   text-decoration: underline;
 }
 
+.download-datasheet {
+  font-weight: 600;
+  margin-top: 12px;
+}
