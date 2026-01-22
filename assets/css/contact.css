@@ -266,3 +266,47 @@ textarea {
     font-size: 13px;
   }
 }
+/* ===============================
+   MOBILE VIEW OVERRIDES ONLY
+   =============================== */
+@media (max-width: 768px) {
+
+  /* Force single column */
+  .form-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  /* Labels: slightly smaller, tighter */
+  .contact-form label {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+
+  /* Inputs & selects: mobile-friendly */
+  .contact-form input,
+  .contact-form select,
+  .contact-form textarea {
+    height: 44px;
+    font-size: 14px;
+  }
+
+  /* Select-specific fine tuning */
+  .contact-form select {
+    padding-right: 40px;
+    background-position: right 12px center;
+  }
+
+  /* Textarea should grow naturally */
+  .contact-form textarea {
+    height: auto;
+    min-height: 96px;
+  }
+
+  /* CTA button: thumb-friendly */
+  .contact-form .btn {
+    height: 48px;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+}
