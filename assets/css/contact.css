@@ -1,5 +1,5 @@
 /* Apple-style select for Model dropdown */
-#drop {
+.drop {
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -26,14 +26,14 @@
 }
 
 /* Focus – Apple feel */
-#drop:focus {
+.drop:focus {
   outline: none;
   border-color: #000;
   box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
 }
 
 /* Default placeholder color */
-#drop option[disabled] {
+.drop option[disabled] {
   color: #9a9a9a;
 }
 
