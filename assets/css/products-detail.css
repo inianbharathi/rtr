@@ -33,6 +33,10 @@ body {
     height: auto;
     object-fit: contain;
 }
+.product-intro-headline {
+  margin-bottom: 8px;   /* or max 12px */
+}
+
 
 /*Product info section styles */
 .product-info {
